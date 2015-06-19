@@ -96,6 +96,16 @@
         </div>
       {% endif %}
 
+
+		<div class="pay">
+			<img src="/images/pay/donate-color.png" class="donate"/>
+			<a href="/images/pay/alipay.jpg" class="fancybox">
+				<img src="/images/pay/alipay.jpg" class="shangimg" alt="alipay">
+			</a>
+			<a href="/images/pay/wechat.jpg" class="fancybox">
+				<img src="/images/pay/wechat.jpg" class="shangimg" alt="wechat">
+			</a>
+		</div>
     </div>
   </div>
 {% endmacro %}

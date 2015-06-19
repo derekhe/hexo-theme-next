@@ -61,11 +61,12 @@
           </span>
           {% endif %}
         {% endif %}
-      </div>
+		<span>&nbsp; | &nbsp; 转载请注明来自www.april1985.com
+		</span>
+	  </div>
     </div>
 
     <div class="post-body">
-
       {# Gallery support #}
       {% if post.photos and post.photos.length %}
         <div class="post-gallery">
@@ -98,6 +99,9 @@
       {% else %}
         {{ post.content }}
       {% endif  %}
+	  <div style="display:none">
+	  {{ url }}
+	  </div>
     </div>
 
     <div class="post-footer">
@@ -107,6 +111,15 @@
             <a href="{{ url_for(tag.path) }}"> #{{ tag.name }} </a>
           {% endfor %}
         </div>
+		<div class="pay">
+			<img src="/images/pay/donate-color.png" class="donate"/>
+			<a href="/images/pay/alipay.jpg" class="fancybox">
+				<img src="/images/pay/alipay.jpg" class="shangimg" alt="alipay">
+			</a>
+			<a href="/images/pay/wechat.jpg" class="fancybox">
+				<img src="/images/pay/wechat.jpg" class="shangimg" alt="wechat">
+			</a>
+		</div>
       {% endif %}
 
       {% if not is_index and (post.prev or post.next) %}
